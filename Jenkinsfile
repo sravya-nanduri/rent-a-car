@@ -9,7 +9,7 @@ pipeline {
                     sh 'ssh jenkins@65.2.29.148 "cd /var/www/html/team1-fe-angular/ && tar -xvzf dist.tar.gz"'
                     sh 'ssh jenkins@65.2.29.148 "cd /var/www/html/team1-fe-angular/ && sudo chown -R jenkins:jenkins *"'
                     sh 'ssh jenkins@65.2.29.148 "cd /var/www/html/team1-fe-angular/ && sudo npm install --legacy-peer-deps"'
-                    sh 'ssh jenkins@65.2.29.148 "cd /var/www/html/team1-fe-angular/ && sudo npm build"'
+                    sh 'ssh jenkins@65.2.29.148 "cd /var/www/html/team1-fe-angular/ && sudo ng build"'
                 }
             }
         }
